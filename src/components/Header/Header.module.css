@@ -1,0 +1,53 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem;
+  background: var(--gray--800);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo img {
+  width: 45px;
+}
+
+.navLink {
+  display: none;
+}
+
+.navLink a {
+  text-decoration: none;
+  padding: 0 0.5rem;
+  color: var(--gray--300);
+}
+
+.navLink a:hover {
+  color: var(--gray--400);
+}
+
+.listMenu {
+  display: flex;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.listMenu svg {
+  color: var(--roxo--100);
+}
+
+@media(min-width: 768px) {
+  .navLink {
+    display: block;
+  }
+
+  .listMenu {
+    display: none;
+  }
+}
