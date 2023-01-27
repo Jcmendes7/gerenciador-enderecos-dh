@@ -1,3 +1,4 @@
+import styles from './UsersPage.module.css'
 import { UserCard } from "../../components/UserCard";
 export function UsersPage() {
   const usersList = [
@@ -30,7 +31,7 @@ export function UsersPage() {
 
   return (
     <>
-      <main>
+      <main className={styles.mainUserPage}>
         {usersList.map((user) => (
           <UserCard id={user.id} name={user.name} email={user.email} />
         ))}

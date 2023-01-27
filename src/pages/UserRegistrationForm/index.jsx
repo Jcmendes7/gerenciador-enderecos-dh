@@ -1,15 +1,17 @@
-import styles from "./Home.module.css";
-export function Home() {
+import { Play } from "phosphor-react";
+import styles from "./UserRegistrationForm.module.css";
+export function UserRegistrationForm() {
 
   function handleSubmit(event) {
     event.preventDefault();
   }
 
   function handleOnChange(event) {
+  
   }
   
   return (
-    <div className={styles.homeContainer}>
+    <div className={styles.userRegisterContainer}>
 
       <form onSubmit={handleSubmit} action="" method="post">
         <div className={styles.formContainer}>
@@ -27,7 +29,7 @@ export function Home() {
 
           <div className={styles.inputsBox}>
             <label htmlFor="email">E-mail</label>
-            <input type="text" id="email" placeholder="Digite seu nome" />
+            <input type="text" id="email" placeholder="Digite seu email" />
           </div>
 
           <div className={styles.inputsBox}>
@@ -35,11 +37,12 @@ export function Home() {
             <input
               type="password"
               id="password"
-              placeholder="Digite seu nome"
+              placeholder="Digite uma senha"
             />
           </div>
 
           <button className={styles.btnForm} type="submit">
+            <Play size={25}/>
             Cadastrar
           </button>
 

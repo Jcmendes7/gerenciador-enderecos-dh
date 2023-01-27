@@ -1,13 +1,19 @@
-.homeContainer {
+.userRegisterContainer {
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 2rem;
 }
 
-.homeContainer form {
+.userRegisterContainer form {
   width: 100%;
+}
+
+.formContainer form label {
+  color: var(--gray--300);
+  line-height: 1.6;
 }
 
 .formContainer {
@@ -17,6 +23,7 @@
   align-items: center;
   gap: 1rem;
   padding: 2rem 3rem;
+  box-shadow:  0 0 6px 1px var(--roxo--100);
 }
 
 .inputsBox {
@@ -30,29 +37,47 @@
   border-radius: 8px;
   background: transparent;
   border: none;
-  border-bottom: 1px solid var(--gray--300);
+  border: 1px solid var(--roxo--100);
   font-size: 1.125rem;
   color: var(--gray--300);
 }
 
 .inputsBox input:focus {
   outline: transparent;
+  border: none;
   border-bottom: 1px solid var(--roxo--100);
 }
 
 .btnForm {
   width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
   padding: 1rem;
   border-radius: 8px;
   border: none;
   cursor: pointer;
   background: var(--roxo--100);
   color: var(--white);
+  transition: all 200ms;
+}
+
+.btnForm:hover{
+  background: var(--roxo--200);
 }
 
 @media(min-width: 900px) {
   .formContainer {
     width: 45%;
     margin: auto;
+  }
+}
+
+@media(max-width: 899px) {
+  .formContainer {
+    box-shadow: none;
   }
 }

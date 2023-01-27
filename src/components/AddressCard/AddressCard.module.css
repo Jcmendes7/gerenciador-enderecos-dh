@@ -1,4 +1,4 @@
-.userCardContainer {
+.addressCardContainer {
   width: 100%;
   border: white;
   display: flex;
@@ -13,4 +13,3 @@
   gap: 0.5rem;
   box-shadow: 0 0 6px  var(--roxo--100);
 }
-

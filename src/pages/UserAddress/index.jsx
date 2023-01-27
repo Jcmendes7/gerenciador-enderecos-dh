@@ -1,41 +1,43 @@
+import styles from './UserAddress.module.css'
+
 import { AddressCard } from "../../components/AddressCard";
 export function UserAddress() {
   const listAddress = [
     {
       id: 1,
-      street: "Rua Jose Sanches Garcia",
+      street: "Jose Sanches Garcia",
       district: "Recanto dos Passaros",
       city: "Birigui",
       state: "SP",
       house_number: "302",
-      fk_user: 1
+      fk_user: 1,
     },
     {
       id: 2,
-      street: "Rua Jose Sanches Garcia",
-      district: "Recanto dos Passaros",
+      street: "Dr Carlos carvalho rosa",
+      district: "Vila Brasil",
       city: "Birigui",
       state: "SP",
-      house_number: "302",
-      fk_user: 2
+      house_number: "489",
+      fk_user: 2,
     },
     {
       id: 3,
-      street: "Rua Jose Sanches Garcia",
-      district: "Recanto dos Passaros",
+      street: "9 de julho",
+      district: "Centro",
       city: "Birigui",
       state: "SP",
-      house_number: "302",
-      fk_user: 3
+      house_number: "698",
+      fk_user: 3,
     },
   ];
 
   return (
     <>
-      <main>
-      {listAddress.map((user) => (
-          <AddressCard 
-            id ={user.id}
+      <main className={styles.mainAddress}>
+        {listAddress.map((user) => (
+          <AddressCard
+            id={user.id}
             street={user.street}
             district={user.district}
             city={user.city}

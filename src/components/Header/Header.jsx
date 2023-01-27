@@ -7,7 +7,7 @@ export function Header() {
     <header className={styles.header}>
       <div className={styles.logo}>
         <img src={logoHeader} alt="" />
-        <strong>LOGO</strong>
+        <strong>Evolution Game</strong>
       </div>
       <button className={styles.listMenu}>
         <List size={45} />
