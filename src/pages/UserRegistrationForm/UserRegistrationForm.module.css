@@ -26,6 +26,10 @@
   box-shadow: 0 0 6px 1px var(--roxo--100);
 }
 
+.formContainer h1 {
+  width: 100%;
+}
+
 .inputsBox {
   width: 100%;
   display: flex;
@@ -56,10 +60,6 @@
   cursor: pointer;
 }
 
-.inputEye {
-  display: none;
-}
-
 .inputsBox input {
   width: 100%;
   padding: 0.5rem;
@@ -74,8 +74,6 @@
   outline: transparent;
   border: none;
 }
-
-
 
 .termosPrivacidade {
   color: var(--gray--300);

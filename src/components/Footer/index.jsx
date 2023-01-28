@@ -23,10 +23,10 @@ export function Footer() {
       <div className={styles.footerEmpresa}>
         <h3>Nos siga nas redes sociais</h3>
         <div className={styles.footerNavLinkSocialMedia}>
-          <a href=""> <FacebookLogo size={28} /> </a>
-          <a href=""> <InstagramLogo size={28} /> </a>
-          <a href=""> <LinkedinLogo size={28} /> </a>
-          <a href=""> <PinterestLogo size={28} /> </a>
+          <a href=""> <FacebookLogo size={28} alt="logo Facebook com link que leva para a pagina" /></a>
+          <a href=""> <InstagramLogo size={28} alt="logo Instragram com link que leva para a pagina" /> </a>
+          <a href=""> <LinkedinLogo size={28} alt="logo Linkedin com link que leva para a pagina" /> </a>
+          <a href=""> <PinterestLogo size={28} alt="logo Pinterest com link que leva para a pagina" /> </a>
 
         </div>
       </div>

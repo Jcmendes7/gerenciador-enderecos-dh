@@ -41,9 +41,9 @@ export function UserRegistrationForm() {
       <Header title="Cadastro de Usuário" />
       <div className={styles.userRegisterContainer}>
         <form onSubmit={handleSubmit} action="" method="post">
+
           <div className={styles.formContainer}>
             <h1>Faça seu Cadastro</h1>
-
             <div className={styles.inputsBox}>
               <label htmlFor="name">Nome Completo</label>
               <div className={styles.input}>
