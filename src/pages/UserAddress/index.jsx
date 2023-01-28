@@ -1,6 +1,7 @@
-import styles from './UserAddress.module.css'
+import styles from "./UserAddress.module.css";
 
 import { AddressCard } from "../../components/AddressCard";
+import { Header } from "../../components/Header/Header";
 export function UserAddress() {
   const listAddress = [
     {
@@ -34,6 +35,7 @@ export function UserAddress() {
 
   return (
     <>
+      <Header title="pagina de endereços" />
       <main className={styles.mainAddress}>
         {listAddress.map((user) => (
           <AddressCard

@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 2rem;
+  margin: 2rem 0;
 }
 
 .userRegisterContainer form {
@@ -23,7 +23,7 @@
   align-items: center;
   gap: 1rem;
   padding: 2rem 3rem;
-  box-shadow:  0 0 6px 1px var(--roxo--100);
+  box-shadow: 0 0 6px 1px var(--roxo--100);
 }
 
 .inputsBox {
@@ -32,12 +32,36 @@
   flex-direction: column;
 }
 
+.input {
+  border: 1px solid var(--roxo--100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+.input span {
+  color: var(--gray--800);
+  padding: 0 0.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input a {
+  color: var(--roxo--100);
+  padding: 0 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
 .inputsBox input {
+  width: 100%;
   padding: 0.5rem;
   border-radius: 8px;
   background: transparent;
   border: none;
-  border: 1px solid var(--roxo--100);
   font-size: 1.125rem;
   color: var(--gray--300);
 }
@@ -45,7 +69,20 @@
 .inputsBox input:focus {
   outline: transparent;
   border: none;
-  border-bottom: 1px solid var(--roxo--100);
+}
+
+.termosPrivacidade {
+  color: var(--gray--300);
+  line-height: 1.6;
+}
+.termosPrivacidade a {
+  text-decoration: none;
+  padding: 5px;
+  color: var(--roxo--50);
+}
+
+.termosPrivacidade a:hover {
+  color: var(--roxo--100);
 }
 
 .btnForm {
@@ -65,18 +102,18 @@
   transition: all 200ms;
 }
 
-.btnForm:hover{
+.btnForm:hover {
   background: var(--roxo--200);
 }
 
-@media(min-width: 900px) {
+@media (min-width: 900px) {
   .formContainer {
     width: 45%;
     margin: auto;
   }
 }
 
-@media(max-width: 899px) {
+@media (max-width: 899px) {
   .formContainer {
     box-shadow: none;
   }

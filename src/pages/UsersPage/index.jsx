@@ -1,5 +1,7 @@
-import styles from './UsersPage.module.css'
+import styles from "./UsersPage.module.css";
 import { UserCard } from "../../components/UserCard";
+import { Header } from "../../components/Header/Header";
+
 export function UsersPage() {
   const usersList = [
     {
@@ -31,6 +33,7 @@ export function UsersPage() {
 
   return (
     <>
+      <Header title="pagina de Usuário" />
       <main className={styles.mainUserPage}>
         {usersList.map((user) => (
           <UserCard id={user.id} name={user.name} email={user.email} />
