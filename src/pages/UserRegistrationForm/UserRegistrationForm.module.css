@@ -48,12 +48,16 @@
 }
 
 .input a {
-  color: var(--roxo--100);
-  padding: 0 0.3rem;
+  color: var(--roxo--50);
+  padding: 0 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+.inputEye {
+  display: none;
 }
 
 .inputsBox input {
@@ -70,6 +74,8 @@
   outline: transparent;
   border: none;
 }
+
+
 
 .termosPrivacidade {
   color: var(--gray--300);
