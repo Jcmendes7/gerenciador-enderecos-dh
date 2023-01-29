@@ -22,7 +22,7 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  padding: 2rem 3rem;
+  padding: 2rem 2rem;
   box-shadow: 0 0 6px 1px var(--roxo--100);
 }
 
@@ -62,7 +62,7 @@
 
 .inputsBox input {
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.7rem;
   border-radius: 8px;
   background: transparent;
   border: none;
@@ -110,12 +110,14 @@
   background: var(--roxo--200);
 }
 
+
 @media (min-width: 900px) {
   .formContainer {
     width: 45%;
     margin: auto;
   }
 }
+
 
 @media (max-width: 899px) {
   .formContainer {

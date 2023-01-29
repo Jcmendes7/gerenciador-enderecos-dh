@@ -1,6 +1,7 @@
 import styles from "./UsersPage.module.css";
 import { UserCard } from "../../components/UserCard";
 import { Header } from "../../components/Header/Header";
+import { Footer } from "../../components/Footer";
 
 export function UsersPage() {
   const usersList = [
@@ -39,6 +40,7 @@ export function UsersPage() {
           <UserCard id={user.id} name={user.name} email={user.email} />
         ))}
       </main>
+      <Footer />
     </>
   );
 }

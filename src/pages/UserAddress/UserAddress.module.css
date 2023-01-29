@@ -1,6 +1,5 @@
 .mainAddress {
   width: 100%;
-  height: calc(100vh - 10rem);
   padding: 2rem;
   display: flex;
   flex-flow: row wrap;

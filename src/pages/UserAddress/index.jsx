@@ -2,6 +2,7 @@ import styles from "./UserAddress.module.css";
 
 import { AddressCard } from "../../components/AddressCard";
 import { Header } from "../../components/Header/Header";
+import { Footer } from "../../components/Footer";
 export function UserAddress() {
   const listAddress = [
     {
@@ -48,6 +49,7 @@ export function UserAddress() {
           />
         ))}
       </main>
+      <Footer />
     </>
   );
 }
