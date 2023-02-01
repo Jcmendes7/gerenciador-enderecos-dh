@@ -37,7 +37,6 @@ export function AddressForm() {
 
   return (
     <>
-      <Header title="Cadastro de endereço" />
       <main className={styles.mainAddressForm}>
         <form onSubmit={handleSubmit} action="" method="post">
           <h1>Cadastro de endereço</h1>
@@ -114,10 +113,7 @@ export function AddressForm() {
 
           <button className={styles.btnSubmitAddress} type="submit">Cadastrar</button>
         </form>
-
       </main>
-
-      <Footer />
     </>
   )
 }

@@ -1,16 +1,15 @@
-import { UserRegistrationForm } from "./pages/UserRegistrationForm";
-import { UsersPage } from "./pages/UsersPage";
+
 import "./global.css";
-import { UserAddress } from "./pages/UserAddress";
-import { AddressForm } from "./pages/AddressForm";
+import { BrowserRouter } from 'react-router-dom'
+import { Router } from "./Router";
 
 export function App() {
   return (
     <main>
-      {/* <UserRegistrationForm /> */}
-      {/* <AddressForm /> */}
-      {/* < UsersPage /> */}
-      <UserAddress />
+      <BrowserRouter>
+      
+      <Router />
+      </BrowserRouter>
     </main>
   );
 }

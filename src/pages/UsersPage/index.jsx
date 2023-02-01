@@ -19,13 +19,11 @@ export function UsersPage() {
 
   return (
     <>
-      <Header title="pagina de Usuário" />
       <main className={styles.mainUserPage}>
         {usersList.map((user) => (
           <UserCard id={user.id} name={user.fullName} email={user.email} />
         ))}
       </main>
-      <Footer />
     </>
   );
 }

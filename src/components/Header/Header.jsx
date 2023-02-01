@@ -11,9 +11,10 @@ export function Header({ title }) {
         <List size={45} />
       </button>
       <div className={styles.navLink}>
-        <a href="">Usuários</a>
-        <a href="">Cadastrar Usuário</a>
-        <a href="">Cadastrar endereço</a>
+        <a href="/users">Usuários</a>
+        <a href="/address">Endereços</a>
+        <a href="/users/register">Cadastrar Usuário</a>
+        <a href="/address/register">Cadastrar endereço</a>
       </div>
     </header>
   )

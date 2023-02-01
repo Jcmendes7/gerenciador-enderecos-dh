@@ -55,7 +55,6 @@ export function UserRegistrationForm() {
 
   return (
     <>
-      <Header title="Cadastro de Usuário" />
       <div className={styles.userRegisterContainer}>
         <form onSubmit={handleSubmit} action="" method="post">
 
@@ -125,7 +124,6 @@ export function UserRegistrationForm() {
           </div>
         </form>
       </div>
-      <Footer />
     </>
   );
 }
