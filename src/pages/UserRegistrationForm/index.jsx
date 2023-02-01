@@ -5,29 +5,46 @@ import {
   User,
 } from "phosphor-react";
 
-import {eyeOff} from 'react-icons-kit/feather/eyeOff'
-import {eye} from 'react-icons-kit/feather/eye'
+import { eyeOff } from 'react-icons-kit/feather/eyeOff'
+import { eye } from 'react-icons-kit/feather/eye'
 
 
 import { Icon } from 'react-icons-kit'
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 import { Footer } from "../../components/Footer";
 import { Header } from "../../components/Header/Header";
 
 import styles from "./UserRegistrationForm.module.css";
+import { api } from '../../services/api'
 
 export function UserRegistrationForm() {
-  const [ type, setType] = useState('password');
-  const [ iconEye, setIconEye ] = useState(eyeOff)
-  function handleSubmit(event) {
+  const [type, setType] = useState('password');
+  const [iconEye, setIconEye] = useState(eyeOff)
+
+  const [fullName, setName] = useState()
+  const [email, setEmail] = useState()
+  const [password, setPassword] = useState()
+
+  async function handleSubmit(event) {
     event.preventDefault();
+    
+    await api.post("/users", {
+      fullName,
+      email,
+      password
+    })
+
+    setName("")
+    setEmail("")
+    setPassword("")
+    alert("Cadastrado com sucesso")
+
   }
 
-  function handleOnChange(event) {}
 
   function handleOnClickEye() {
-    if(type === "password") {
+    if (type === "password") {
       setIconEye(eye);
       setType('text')
     } else {
@@ -55,7 +72,8 @@ export function UserRegistrationForm() {
                   type="text"
                   id="name"
                   placeholder="Digite seu nome"
-                  onChange={handleOnChange}
+                  value={fullName}
+                  onChange={(event) => setName(event.target.value)}
                 />
               </div>
             </div>
@@ -66,7 +84,12 @@ export function UserRegistrationForm() {
                 <span>
                   <EnvelopeSimple size={24} />
                 </span>
-                <input type="text" id="email" placeholder="Digite seu email" />
+                <input 
+                  type="text" 
+                  id="email" 
+                  value={email}
+                  onChange={(event) => setEmail(event.target.value)}
+                  placeholder="Digite seu email" />
               </div>
             </div>
 
@@ -79,6 +102,8 @@ export function UserRegistrationForm() {
                 <input
                   type={type}
                   id="password"
+                  value={password}
+                  onChange={(event) => setPassword(event.target.value)}
                   placeholder="Digite uma senha"
                 />
                 <a onClick={handleOnClickEye}>
