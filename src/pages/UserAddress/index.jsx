@@ -9,7 +9,7 @@ export function UserAddress() {
   
   useEffect(() => {
     async function getAllAddress() {
-      const response = await api.get("/address/users")
+      const response = await api.get("/address")
       setListAddress(response.data)
     }
 

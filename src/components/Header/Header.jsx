@@ -1,5 +1,6 @@
 import styles from './Header.module.css'
 import { List } from 'phosphor-react'
+import { NavLink } from 'react-router-dom'
 
 export function Header({ title }) {
   return (
@@ -11,10 +12,10 @@ export function Header({ title }) {
         <List size={45} />
       </button>
       <div className={styles.navLink}>
-        <a href="/users">Usuários</a>
-        <a href="/address">Endereços</a>
-        <a href="/users/register">Cadastrar Usuário</a>
-        <a href="/address/register">Cadastrar endereço</a>
+        <NavLink to="/users">Usuários</NavLink>
+        <NavLink to="/address">Endereços</NavLink>
+        <NavLink to="/users/register">Cadastrar Usuário</NavLink>
+        <NavLink to="/address/register">Cadastrar endereço</NavLink>
       </div>
     </header>
   )

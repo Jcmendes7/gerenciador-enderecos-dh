@@ -27,6 +27,11 @@
   color: var(--gray--300);
 }
 
+.navLink a:active {
+  color: var(--roxo--100);
+}
+
+
 .navLink a:hover {
   color: var(--gray--400);
 }

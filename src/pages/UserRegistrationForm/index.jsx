@@ -29,7 +29,7 @@ export function UserRegistrationForm() {
   async function handleSubmit(event) {
     event.preventDefault();
     
-    await api.post("/users", {
+    await api.post("/users/create", {
       fullName,
       email,
       password

@@ -15,6 +15,5 @@ export function Router() {
         <Route path='/address/register' element={< AddressForm />} />
       </Route>
     </Routes>
-
   )
 }
