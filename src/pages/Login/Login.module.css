@@ -38,7 +38,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 8px;
+  border-radius: 5px;
   background: var(--gray--900);
 }
 
@@ -53,24 +53,23 @@
 
 .input input {
   width: 100%;
-  padding: 0.7rem;
+  padding: 0.9rem;
   border: none;
   background: transparent;
   color: var(--gray--300);
-  
 }
 
 .passwordForgot {
   text-decoration: none;
   color: var(--roxo--100);
-  font-size: 0.865rem;
+  font-size: 1rem;
   padding: 0.3rem;
 }
 
 .btnLogin {
   padding: 1rem;
-  margin-top: 1rem;
-  border-radius: 8px;
+  margin-top: 0.7rem;
+  border-radius: 5px;
 
   background: var(--roxo--100);
   color: var(--white);
@@ -99,19 +98,17 @@
 
 .enterWithContainer {
   flex: 1 1 0%;
-    display: flex;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
-    width: 100%;
-    padding: 28px 0px 50px;
-
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
 }
 
-.enterWithContainer > div  {
+.enterWithContainer > div {
   margin-right: 23px;
-  font-size: 0.875rem;
+  font-size: 1rem;
   white-space: nowrap;
 }
 
@@ -131,7 +128,7 @@
   padding: 1rem;
 }
 
-@media(min-width: 901px) {
+@media (min-width: 901px) {
   .loginContainer {
     display: flex;
     justify-content: center;
@@ -144,6 +141,4 @@
   .mainContainer {
     width: 25rem;
   }
-  
-
 }
