@@ -56,7 +56,7 @@ export function Login() {
             <button className={styles.btnLogin} type="submit">Login</button>
 
             <span className={styles.createAccountLogin}>
-              Ainda não tem um conta? <NavLink to="/users/register">Crie a sua conta</NavLink>
+              Ainda não tem uma conta? <NavLink to="/users/register">Crie a sua conta</NavLink>
             </span>
 
             <div className={styles.divDecorationLogin}></div>
